@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Deploy Service'){
             steps{
-                sh 'kubectl apply -f np.svc.yaml'
+                sh 'kubectl apply -f np-svc.yaml'
             }
         }
         stage('Deploy pods'){
