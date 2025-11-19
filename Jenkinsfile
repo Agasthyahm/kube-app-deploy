@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Deploy pods'){
             steps{
-                sh 'kuebctl apply -f dep.yaml'
+                sh 'kubectl apply -f dep.yaml'
             }
         }
     }
